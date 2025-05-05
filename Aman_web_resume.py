@@ -1297,44 +1297,42 @@ def  Resume_pdf_Download():
 
     # ✅ Apply background image (Make sure the path is correct)
     set_background("shutterstock_1046852695-Converted.jpg")
-    
     st.title("📄 Resume PDF")
-
+    
     PDF_SAVE_PATH = "uploaded.pdf"
-
+    
     # --- Developer Options ---
     with st.expander("⚙️ Developer Login"):
         password = st.text_input("Enter developer password", type="password")
         is_developer = password == "your_secret_password"  # 🔑 Change this to your password
-
-    if is_developer:
-        st.success("Developer access granted.")
-        
-        # Upload option only for developer
-        uploaded_file = st.file_uploader("Upload a PDF file (Developer only)", type="pdf")
-
-        if uploaded_file is not None:
-            with open(PDF_SAVE_PATH, "wb") as f:
-                f.write(uploaded_file.getvalue())
-            st.success("PDF uploaded and saved successfully.")
-
-        # Delete option
-        if st.button("🗑️ Delete PDF File"):
-            if os.path.exists(PDF_SAVE_PATH):
-                os.remove(PDF_SAVE_PATH)
-                st.success("PDF file deleted successfully.")
-            else:
-                st.warning("No PDF file to delete.")
-
-    # --- Viewer Section ---
-    st.subheader("📄 View Uploaded PDF")
+    
+        if is_developer:
+            st.success("Developer access granted.")
+            
+            # Upload option only for developer
+            uploaded_file = st.file_uploader("Upload a PDF file (Developer only)", type="pdf")
+    
+            if uploaded_file is not None:
+                with open(PDF_SAVE_PATH, "wb") as f:
+                    f.write(uploaded_file.getvalue())
+                st.success("PDF uploaded and saved successfully.")
+    
+            # Delete option
+            if st.button("🗑️ Delete PDF File"):
+                if os.path.exists(PDF_SAVE_PATH):
+                    os.remove(PDF_SAVE_PATH)
+                    st.success("PDF file deleted successfully.")
+                else:
+                    st.warning("No PDF file to delete.")
+    
+    # --- Viewer Section (Download Only) ---
+    st.subheader("📥 Download Resume PDF")
     if os.path.exists(PDF_SAVE_PATH):
         with open(PDF_SAVE_PATH, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-        pdf_display = f"""
-        <iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>
-        """
-        st.markdown(pdf_display, unsafe_allow_html=True)
+            pdf_bytes = f.read()
+            b64 = base64.b64encode(pdf_bytes).decode()
+            href = f'<a href="data:application/octet-stream;base64,{b64}" download="Resume.pdf">📥 Click here to download the PDF</a>'
+            st.markdown(href, unsafe_allow_html=True)
     else:
         st.info("No PDF uploaded yet. Please contact the developer.")
   

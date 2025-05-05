@@ -504,7 +504,7 @@ def Skill_Set():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/soft-hard-skills.png")
+    set_background("oft-hard-skills.png")
     
     st.header("Technical Skills")
     col1, col2, col3 = st.columns(3)

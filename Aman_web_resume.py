@@ -1296,7 +1296,7 @@ def  Resume_pdf_Download():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/shutterstock_1046852695-Converted.jpg")
+    set_background("shutterstock_1046852695-Converted.jpg")
     
     st.title("📄 Resume PDF")
 

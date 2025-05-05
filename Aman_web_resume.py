@@ -8,7 +8,7 @@ from io import BytesIO
     
 # ✅ Set page configuration FIRST
 st.set_page_config(page_title="Amandeep Singh Resume", 
-                   page_icon="D:/Education work/Amantah Education/AEROSPACE/aman.jpeg", 
+                   page_icon="aman.jpeg", 
                    layout="wide")
 
 # Encode local image to base64 string
@@ -19,7 +19,7 @@ def get_base64_image(image_path):
         return base64.b64encode(buffered.getvalue()).decode()
 
 # Full absolute path to the image
-image_path = "D:/Education work/Amantah Education/AEROSPACE/side bar.jpg"
+image_path = "side bar.jpg"
 
 # Check if image exists first
 if os.path.exists(image_path):
@@ -67,9 +67,9 @@ def Home():
                     st.error("Background image not found. Please check the file path.")
 
             # ✅ Apply background image (Make sure the path is correct)
-            set_background("D:/Education work/Amantah Education/AEROSPACE/photo-1454165804606-c3d57bc86b40.jpeg")
+            set_background("photo-1454165804606-c3d57bc86b40.jpeg")
             # ✅ Load the logo
-            logo = Image.open("D:/Education work/Amantah Education/AEROSPACE/aman.jpeg")
+            logo = Image.open("aman.jpeg")
             # ✅ Header Section
             st.image(logo, width=150)
             st.title("Welcome to My Portfolio")
@@ -259,7 +259,7 @@ def Education():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/OSB34T.jpg")
+    set_background("OSB34T.jpg")
 
     st.markdown("## 🎓 Education")
     st.markdown("""### 🛩 M.Tech in Aerospace Engineering""")
@@ -326,7 +326,7 @@ def Work_Experience():
                     st.error("Background image not found. Please check the file path.")
 
         # ✅ Apply background image (Make sure the path is correct)
-        set_background("D:/Education work/Amantah Education/AEROSPACE/use-this-one.png")
+        set_background("use-this-one.png")
 
         st.title("Work Experience")
 
@@ -593,7 +593,7 @@ def  Internship_Certification():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/Abstract-of-web-developer-portfolio-images.jpg")
+    set_background("Abstract-of-web-developer-portfolio-images.jpg")
 
     # ✅ Features Section
     st.header("Internship")
@@ -622,7 +622,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
 
-        st.image("D:/Education work/Amantah Education/AEROSPACE/Space claim.png", caption="ANSYS (SpaceClaim) Software Training", width=300)
+        st.image("Space claim.png", caption="ANSYS (SpaceClaim) Software Training", width=300)
 
     with col2:
         st.markdown("""
@@ -646,7 +646,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
 
-        st.image("D:/Education work/Amantah Education/AEROSPACE/cfd cae.png", caption="ANSYS (CAE + CFD) Analysis Training", width=300)
+        st.image("cfd cae.png", caption="ANSYS (CAE + CFD) Analysis Training", width=300)
 
     with col3:
        st.markdown("""
@@ -669,7 +669,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
 
-       st.image("D:/Education work/Amantah Education/AEROSPACE/GD&T.png", caption="Geometric Dimensioning & Tolerancing (GD&T)", width=300)
+       st.image("GD&T.png", caption="Geometric Dimensioning & Tolerancing (GD&T)", width=300)
 
     with col4:
         st.markdown("""
@@ -692,7 +692,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
 
-        st.image("D:/Education work/Amantah Education/AEROSPACE/Internship 2021_page-0001.jpg", caption="Spacecraft Design – Orbitx India Aerospace", width=300)
+        st.image("Internship 2021_page-0001.jpg", caption="Spacecraft Design – Orbitx India Aerospace", width=300)
 
     st.markdown("---")
 
@@ -721,7 +721,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
         
-        st.image("D:/Education work/Amantah Education/AEROSPACE/Python.jpg", caption="Python Course for Beginners", width=300)
+        st.image("Python.jpg", caption="Python Course for Beginners", width=300)
         
     with col2:
         st.markdown("""
@@ -743,7 +743,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
         
-        st.image("D:/Education work/Amantah Education/AEROSPACE/Python with Data Science.jpg", caption="Python and SQL for Data Science", width=300)
+        st.image("Python with Data Science.jpg", caption="Python and SQL for Data Science", width=300)
 
     with col3:
        st.markdown("""
@@ -765,7 +765,7 @@ def  Internship_Certification():
             </div>
        """, unsafe_allow_html=True)
        
-       st.image("D:/Education work/Amantah Education/AEROSPACE/Data Science.jpg", caption="Data Science", width=300)
+       st.image("Data Science.jpg", caption="Data Science", width=300)
 
     with col4:
         st.markdown("""
@@ -787,7 +787,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
 
-        st.image("D:/Education work/Amantah Education/AEROSPACE/UC-f00aecbd-4347-41c3-85d7-286434923096.jpg", caption="Python App Development Master Class: App Development Bootcamp", width=300)
+        st.image("UC-f00aecbd-4347-41c3-85d7-286434923096.jpg", caption="Python App Development Master Class: App Development Bootcamp", width=300)
 
     with col5:
         st.markdown("""
@@ -809,7 +809,7 @@ def  Internship_Certification():
             </div>
         """, unsafe_allow_html=True)
 
-        st.image("D:/Education work/Amantah Education/AEROSPACE/UC-092bc091-f698-447e-bf4f-ded9e81ad5a5.jpg", caption="HTML, CSS, and JavaScript Certification Course for Beginners", width=300)
+        st.image("UC-092bc091-f698-447e-bf4f-ded9e81ad5a5.jpg", caption="HTML, CSS, and JavaScript Certification Course for Beginners", width=300)
  
 def Projects():
 
@@ -833,7 +833,7 @@ def Projects():
             st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/photo-1572177812156-58036aae439c.jpeg")
+    set_background("photo-1572177812156-58036aae439c.jpeg")
     st.header("Projects")
     # Font size dropdown
     font_size = st.selectbox(
@@ -1004,7 +1004,7 @@ def Conferance_Research_Publication():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/educational-light-bulb-qz50uzn6nrhc6pmv.jpg")
+    set_background("educational-light-bulb-qz50uzn6nrhc6pmv.jpg")
     st.header("📚 Conferences & Research Publications")
     # Font size dropdown
     font_size = st.selectbox(
@@ -1130,7 +1130,7 @@ def Educational_Activity():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/education-open-book-blackboard-24neqyjtkzc2rc21.jpg")
+    set_background("education-open-book-blackboard-24neqyjtkzc2rc21.jpg")
 
     st.markdown("## 📚 Educational Activities")
 
@@ -1157,7 +1157,7 @@ def Educational_Activity():
     """, unsafe_allow_html=True)
     
     # Adjust image size (width: 600px, height: 400px)
-    st.image("D:/Education work/Amantah Education/AEROSPACE/9b69e3c1fa41dbf8a24931137d6dc0c037330b613191fcc227e86ef8e90a63a7.png", caption="Data Science using Gen AI & Python", width=600)
+    st.image("9b69e3c1fa41dbf8a24931137d6dc0c037330b613191fcc227e86ef8e90a63a7.png", caption="Data Science using Gen AI & Python", width=600)
 
     st.markdown("---")
      
@@ -1184,7 +1184,7 @@ def Educational_Activity():
     """, unsafe_allow_html=True)
     
     # Adjust image size (width: 600px, height: 400px)
-    st.image("D:/Education work/Amantah Education/AEROSPACE/IMG_1741498105542.jpg", caption="Data Science vs Machine Learning vs Artifical Intelligence", width=600)
+    st.image("IMG_1741498105542.jpg", caption="Data Science vs Machine Learning vs Artifical Intelligence", width=600)
 
     st.markdown("---")
     
@@ -1211,7 +1211,7 @@ def Educational_Activity():
     """, unsafe_allow_html=True)
 
     # Adjust image size (width: 600px, height: 400px)
-    st.image("D:/Education work/Amantah Education/AEROSPACE/WhatsApp Image 2024-02-01 at 05.15.42.jpeg", caption="Speaking at the Drone Design Workshop – May 2023", width=600)
+    st.image("WhatsApp Image 2024-02-01 at 05.15.42.jpeg", caption="Speaking at the Drone Design Workshop – May 2023", width=600)
 
     st.markdown("---")
 
@@ -1238,7 +1238,7 @@ def Educational_Activity():
     """, unsafe_allow_html=True)
 
     # Adjust image size (width: 600px, height: 400px)
-    st.image("D:/Education work/Amantah Education/AEROSPACE/IMG20230204141459.jpg", caption="Visit to the Indian Air Force Museum – May 2023", width=600)
+    st.image("IMG20230204141459.jpg", caption="Visit to the Indian Air Force Museum – May 2023", width=600)
 
 def Contact_Details():
     # ✅ Function to set background image
@@ -1261,7 +1261,7 @@ def Contact_Details():
                 st.error("Background image not found. Please check the file path.")
 
     # ✅ Apply background image (Make sure the path is correct)
-    set_background("D:/Education work/Amantah Education/AEROSPACE/glowing-contact-us-logo-qx58564q7a51etk6.jpg")
+    set_background("glowing-contact-us-logo-qx58564q7a51etk6.jpg")
     # ✅ Contact & Social Media
     st.header("Get in Touch")
     st.write("📍 Location: New Delhi")

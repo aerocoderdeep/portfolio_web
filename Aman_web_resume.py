@@ -1325,7 +1325,7 @@ def welcome_page():
             """, unsafe_allow_html=True)
 
             # Adjust image size (width: 600px, height: 400px)
-            st.image("IMG20230204141459.jpg", caption="Visit to the Indian Air Force Museum – May 2023", width=600)
+            st.image("IMG_20230204141459.jpg", caption="Visit to the Indian Air Force Museum – May 2023", width=600)
 
         def Contact_Details():
             # ✅ Function to set background image

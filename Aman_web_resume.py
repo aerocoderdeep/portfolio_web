@@ -1387,7 +1387,7 @@ def welcome_page():
             
             st.title("📄 Resume PDF")
 
-            PDF_SAVE_PATH = "uploaded.pdf"
+            PDF_SAVE_PATH = "Amandeep Singh Resume 2025.pdf"
           
             # --- Developer Options ---
             with st.expander("⚙️ Developer Login"):

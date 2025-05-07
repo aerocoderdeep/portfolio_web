@@ -1388,23 +1388,23 @@ def welcome_page():
             st.title("📄 Resume PDF")
 
             PDF_SAVE_PATH = "uploaded.pdf"
-
+          
             # --- Developer Options ---
             with st.expander("⚙️ Developer Login"):
                 password = st.text_input("Enter developer password", type="password")
                 is_developer = password == "your_secret_password"  # 🔑 Change this to your password
-
+            
             if is_developer:
                 st.success("Developer access granted.")
-                
+            
                 # Upload option only for developer
                 uploaded_file = st.file_uploader("Upload a PDF file (Developer only)", type="pdf")
-
+            
                 if uploaded_file is not None:
                     with open(PDF_SAVE_PATH, "wb") as f:
                         f.write(uploaded_file.getvalue())
                     st.success("PDF uploaded and saved successfully.")
-
+            
                 # Delete option
                 if st.button("🗑️ Delete PDF File"):
                     if os.path.exists(PDF_SAVE_PATH):
@@ -1412,18 +1412,16 @@ def welcome_page():
                         st.success("PDF file deleted successfully.")
                     else:
                         st.warning("No PDF file to delete.")
-
-            # --- Viewer Section ---
-            st.subheader("📄 View Uploaded PDF")
+            
+            # --- Download Section ---
+            st.subheader("⬇️ Download Resume PDF")
             if os.path.exists(PDF_SAVE_PATH):
                 with open(PDF_SAVE_PATH, "rb") as f:
-                    base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-                pdf_display = f"""
-                <iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>
-                """
-                st.markdown(pdf_display, unsafe_allow_html=True)
+                    base64_pdf = base64.b64encode(f.read()).decode("utf-8")
+                    href = f'<a href="data:application/octet-stream;base64,{base64_pdf}" download="Resume.pdf">📥 Click here to download the resume</a>'
+                    st.markdown(href, unsafe_allow_html=True)
             else:
-                st.info("No PDF uploaded yet. Please contact the developer.")
+                st.info("No resume available for download. Please contact the developer.")
           
         # --- Setup Session State ---
         if 'page' not in st.session_state:
@@ -1528,7 +1526,7 @@ def welcome_page():
                         )
                     except FileNotFoundError:
                         st.error("Background image not found. Please check the file path.")
-                 set_background("D:/Education work/Amantah Education/AEROSPACE/10.jpg")
+                 set_background("10.jpg")
 
                  if st.button("Logout", key="logout_button"):
                             st.session_state.logged_in = False

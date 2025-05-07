@@ -36,7 +36,7 @@ def set_background(image_path):
         st.error("Background image not found. Please check the file path.")
 
 # ✅ Apply background image (Make sure the path is correct)
-set_background("amandeep.jpg")
+set_background("1.jpg")
 
 # ---------- STYLING ----------
 def set_custom_styles():

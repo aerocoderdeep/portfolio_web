@@ -156,7 +156,7 @@ def welcome_page():
                     # ✅ Apply background image (Make sure the path is correct)
                     set_background("photo-1454165804606-c3d57bc86b40.jpeg")
                     # ✅ Load the logo
-                    logo = Image.open("D:/Education work/Amantah Education/AEROSPACE/aman.jpeg")
+                    logo = Image.open("aman.jpeg")
                     # ✅ Header Section
                     st.image(logo, width=150)
                     st.title("Welcome to My Portfolio")
@@ -346,7 +346,7 @@ def welcome_page():
                         st.error("Background image not found. Please check the file path.")
 
             # ✅ Apply background image (Make sure the path is correct)
-            set_background("AEROSPACE/OSB34T.jpg")
+            set_background("OSB34T.jpg")
 
             st.markdown("## 🎓 Education")
             st.markdown("""### 🛩 M.Tech in Aerospace Engineering""")

@@ -630,9 +630,9 @@ def welcome_page():
                                 <h5 style="color:#003366;">Programming & AI</h5>
                                 <p style="font-size:35px;">
                                      <li> SQL
-                                     <li> PTC Creo
-                                     <li> Web Dev (HTML, CSS, JS – Beginner)
+                                     <li> Web Dev 
                                      <li> App Development
+                                     <li> HTML, CSS, JS – Beginner
                                      <li> Data Science
                                      <li> AI Tools & ChatGPT
                                 </p>

@@ -592,7 +592,6 @@ def welcome_page():
 
             # ✅ Apply background image (Make sure the path is correct)
             set_background("soft-hard-skills.png")
-            
             st.header("Technical Skills")
             col1, col2, col3 = st.columns(3)
             with col1:
@@ -664,7 +663,7 @@ def welcome_page():
             # List of image paths and captions
             images = [
                 ("Ptc creo.jpg"),
-                ("ANSYS"),     
+                ("ANSYS.jpg"),     
             ]
 
             # Create 5 columns for horizontal layout

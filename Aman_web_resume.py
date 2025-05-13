@@ -658,57 +658,31 @@ def welcome_page():
                             </div>
                         """, unsafe_allow_html=True)
            
+            def display_images_section(section_title, images):
+                  st.title(section_title)
+                  cols = st.columns(len(images))
+                  for col, (img_path, caption) in zip(cols, images):
+                      image = Image.open(img_path)
+                      resized_image = image.resize((150, 150))
+                      col.image(resized_image, caption=caption)
+              
+            # --- Main Display ---
+            
             st.title("Skills Set")
-            st.title("Simulation & Design")
-
-            # List of image paths and captions
-            images = [
+            display_images_section("Simulation & Design", [
                 ("Ptc creo.jpg", "Ptc creo"),
-                ("ANSYS.jpg", "ANSYS"),     
-            ]
-
-            # Create 5 columns for horizontal layout
-            cols = st.columns(len(images))
-
-            # Display each image in a column
-            for col, (img_path, caption) in zip(cols, images):
-                image = Image.open(img_path)
-                resized_image = image.resize((150, 150))
-                col.image(resized_image, caption=caption)
-
-
-            st.title("Programming & AI")
-            # List of image paths and captions
-            images = [
+                ("ANSYS.jpg", "ANSYS"),
+            ])
+            
+            display_images_section("Programming & AI", [
                 ("Python.png", "Python"),
-                ("Data Science logo.jpg", "Data Science"),  
-            ]
-
-            # Create 5 columns for horizontal layout
-            cols = st.columns(len(images))
-
-            # Display each image in a column
-            for col, (img_path, caption) in zip(cols, images):
-                image = Image.open(img_path)
-                resized_image = image.resize((150, 150))
-                col.image(resized_image, caption=caption)
-
-            st.title("Productivity & Design")
-
-            # List of image paths and captions
-            images = [
+                ("Data Science logo.jpg", "Data Science"),
+            ])
+            
+            display_images_section("Productivity & Design", [
                 ("Office.png", "Office"),
-                ("Canva.png", "Canva"),  
-            ]
-
-            # Create 5 columns for horizontal layout
-            cols = st.columns(len(images))
-
-            # Display each image in a column
-            for col, (img_path, caption) in zip(cols, images):
-                image = Image.open(img_path)
-                resized_image = image.resize((150, 150))
-                col.image(resized_image, caption=caption)
+                ("Canva.png", "Canva"),
+            ])
                 
         def  Internship_Certification():
             # ✅ Function to set background image

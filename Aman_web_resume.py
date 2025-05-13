@@ -885,7 +885,7 @@ def welcome_page():
                     </div>
                 """, unsafe_allow_html=True)
 
-                st.image("D:/Education work/Amantah Education/AEROSPACE/UC-092bc091-f698-447e-bf4f-ded9e81ad5a5.jpg", caption="HTML, CSS, and JavaScript Certification Course for Beginners", width=300)
+                st.image("UC-092bc091-f698-447e-bf4f-ded9e81ad5a5.jpg", caption="HTML, CSS, and JavaScript Certification Course for Beginners", width=300)
 
             with col2:
                 st.markdown("""
@@ -907,7 +907,7 @@ def welcome_page():
                     </div>
                 """, unsafe_allow_html=True)
 
-                st.image("D:/Education work/Amantah Education/AEROSPACE/UC-f00aecbd-4347-41c3-85d7-286434923096.jpg", caption="Python App Development Master Class: App Development Bootcamp", width=300)
+                st.image("UC-f00aecbd-4347-41c3-85d7-286434923096.jpg", caption="Python App Development Master Class: App Development Bootcamp", width=300)
 
             with col3:
                st.markdown("""
@@ -929,7 +929,7 @@ def welcome_page():
                     </div>
                """, unsafe_allow_html=True)
                
-               st.image("D:/Education work/Amantah Education/AEROSPACE/Data Science.jpg", caption="Data Science", width=300)
+               st.image("Data Science.jpg", caption="Data Science", width=300)
     
             with col4:
                 st.markdown("""
@@ -951,7 +951,7 @@ def welcome_page():
                     </div>
                 """, unsafe_allow_html=True)
                 
-                st.image("D:/Education work/Amantah Education/AEROSPACE/Python with Data Science.jpg", caption="Python and SQL for Data Science", width=300)
+                st.image("Python with Data Science.jpg", caption="Python and SQL for Data Science", width=300)
 
             with col5:
                 st.markdown("""
@@ -973,7 +973,7 @@ def welcome_page():
                     </div>
                 """, unsafe_allow_html=True)
                 
-                st.image("D:/Education work/Amantah Education/AEROSPACE/Python.jpg", caption="Python Course for Beginners", width=300)
+                st.image("Python.jpg", caption="Python Course for Beginners", width=300)
          
         def Projects():
 

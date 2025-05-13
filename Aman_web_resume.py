@@ -663,7 +663,7 @@ def welcome_page():
 
             # List of image paths and captions
             images = [
-                ("Ptc creo.jpg"),
+                ("Ptc creo.jpg", "Ptc creo"),
                 ("ANSYS.jpg"),     
             ]
 

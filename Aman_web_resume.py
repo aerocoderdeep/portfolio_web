@@ -664,7 +664,7 @@ def welcome_page():
             # List of image paths and captions
             images = [
                 ("Ptc creo.jpg", "Ptc creo"),
-                ("ANSYS.jpg"),     
+                ("ANSYS.jpg", "ANSYS"),     
             ]
 
             # Create 5 columns for horizontal layout
@@ -680,8 +680,8 @@ def welcome_page():
             st.title("Programming & AI")
             # List of image paths and captions
             images = [
-                ("Python.jpg"),
-                ("Data Science Logo.jpg"),  
+                ("Python.png", "Python"),
+                ("Data Science logo.jpg", "Data Science"),  
             ]
 
             # Create 5 columns for horizontal layout
@@ -697,8 +697,8 @@ def welcome_page():
 
             # List of image paths and captions
             images = [
-                ("Office.png"),
-                ("Canva.png"),  
+                ("Office.png", "Office"),
+                ("Canva.png", "Canva"),  
             ]
 
             # Create 5 columns for horizontal layout

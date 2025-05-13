@@ -659,12 +659,11 @@ def welcome_page():
                             </div>
                         """, unsafe_allow_html=True)
             st.title("Skills Set")
-            
             st.title("Simulation & Design")
 
             # List of image paths and captions
             images = [
-                ("Ptc creo"),
+                ("Ptc creo.jpg"),
                 ("ANSYS"),     
             ]
 
@@ -679,7 +678,6 @@ def welcome_page():
 
 
             st.title("Programming & AI")
-
             # List of image paths and captions
             images = [
                 ("Python"),

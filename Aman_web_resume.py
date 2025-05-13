@@ -763,7 +763,7 @@ def welcome_page():
                     </div>
                 """, unsafe_allow_html=True)
 
-                st.image("Internship 2022.png", caption="Spacecraft Design – Orbitx India Aerospace", width=300) 
+                st.image("Internship 2022.png", caption="Reusable Launch Vehcile "Atal Yaan" – Orbitx India Aerospace", width=300) 
 
             with col2:
                 st.markdown("""

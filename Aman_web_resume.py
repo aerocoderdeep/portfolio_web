@@ -658,7 +658,7 @@ def welcome_page():
                                 </p>
                             </div>
                         """, unsafe_allow_html=True)
-                          st.title("Skills Set")
+            st.title("Skills Set")
             
             st.title("Simulation & Design")
 

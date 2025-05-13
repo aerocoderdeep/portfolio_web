@@ -658,6 +658,61 @@ def welcome_page():
                                 </p>
                             </div>
                         """, unsafe_allow_html=True)
+                          st.title("Skills Set")
+            
+            st.title("Simulation & Design")
+
+            # List of image paths and captions
+            images = [
+                ("D:/Education work/Amantah Education/AEROSPACE/Ptc creo.jpg", "Ptc creo"),
+                ("D:/Education work/Amantah Education/AEROSPACE/ANSYS.jpg", "ANSYS"),
+                
+            ]
+
+            # Create 5 columns for horizontal layout
+            cols = st.columns(len(images))
+
+            # Display each image in a column
+            for col, (img_path, caption) in zip(cols, images):
+                image = Image.open(img_path)
+                resized_image = image.resize((150, 150))
+                col.image(resized_image, caption=caption)
+
+
+            st.title("Programming & AI")
+
+            # List of image paths and captions
+            images = [
+                ("D:/Education work/Amantah Education/AEROSPACE/Python.png", "Python"),
+                ("D:/Education work/Amantah Education/AEROSPACE/Data Science logo.jpg", "Data Science"),  
+            ]
+
+            # Create 5 columns for horizontal layout
+            cols = st.columns(len(images))
+
+            # Display each image in a column
+            for col, (img_path, caption) in zip(cols, images):
+                image = Image.open(img_path)
+                resized_image = image.resize((150, 150))
+                col.image(resized_image, caption=caption)
+
+            st.title("Productivity & Design")
+
+            # List of image paths and captions
+            images = [
+                ("D:/Education work/Amantah Education/AEROSPACE/Office.png", "Office"),
+                ("D:/Education work/Amantah Education/AEROSPACE/Canva.png", "Canva"),
+                
+            ]
+
+            # Create 5 columns for horizontal layout
+            cols = st.columns(len(images))
+
+            # Display each image in a column
+            for col, (img_path, caption) in zip(cols, images):
+                image = Image.open(img_path)
+                resized_image = image.resize((150, 150))
+                col.image(resized_image, caption=caption)
                 
         def  Internship_Certification():
             # ✅ Function to set background image

@@ -664,9 +664,8 @@ def welcome_page():
 
             # List of image paths and captions
             images = [
-                ("D:/Education work/Amantah Education/AEROSPACE/Ptc creo.jpg", "Ptc creo"),
-                ("D:/Education work/Amantah Education/AEROSPACE/ANSYS.jpg", "ANSYS"),
-                
+                ("Ptc creo"),
+                ("ANSYS"),     
             ]
 
             # Create 5 columns for horizontal layout
@@ -683,8 +682,8 @@ def welcome_page():
 
             # List of image paths and captions
             images = [
-                ("D:/Education work/Amantah Education/AEROSPACE/Python.png", "Python"),
-                ("D:/Education work/Amantah Education/AEROSPACE/Data Science logo.jpg", "Data Science"),  
+                ("Python"),
+                ("Data Science"),  
             ]
 
             # Create 5 columns for horizontal layout
@@ -700,9 +699,8 @@ def welcome_page():
 
             # List of image paths and captions
             images = [
-                ("D:/Education work/Amantah Education/AEROSPACE/Office.png", "Office"),
-                ("D:/Education work/Amantah Education/AEROSPACE/Canva.png", "Canva"),
-                
+                ("Office"),
+                ("Canva"),  
             ]
 
             # Create 5 columns for horizontal layout

@@ -864,7 +864,7 @@ def welcome_page():
             st.header("Certification")
             col1, col2, col3,col4, col5  = st.columns(5)
             col1, col2, col3, col4, col5  = st.columns(5)  
-
+          
             with col1:
                 st.markdown("""
                     <div style="background-color: rgba(240, 242, 246, 0.3);
@@ -877,16 +877,16 @@ def welcome_page():
                                 backdrop-filter: blur(8px);
                                 -webkit-backdrop-filter: blur(8px);
                                 margin-bottom: 28px;">
-                        <h5 style="color:#003366;">Python Course for Beginners</h5>
+                        <h5 style="color:#003366;">HTML, CSS, and JavaScript Certification Course for Beginners</h5>
                         <p style="font-size:28px;">
-                            <li>Issued by Scaler | 25 Feb 2025
-                            <li>Gained foundational knowledge of Python programming, including syntax, data structures, and basic scripting.
+                            <li>Issued by Udemy | 25 April 2025
+                            <li>Developed skills in front-end web development, including building responsive web pages using HTML, CSS, and basic JavaScript.  
                         </p>
                     </div>
                 """, unsafe_allow_html=True)
-                
-                st.image("Python.jpg", caption="Python Course for Beginners", width=300)
-                
+
+                st.image("D:/Education work/Amantah Education/AEROSPACE/UC-092bc091-f698-447e-bf4f-ded9e81ad5a5.jpg", caption="HTML, CSS, and JavaScript Certification Course for Beginners", width=300)
+
             with col2:
                 st.markdown("""
                     <div style="background-color: rgba(240, 242, 246, 0.3);
@@ -899,15 +899,15 @@ def welcome_page():
                                 backdrop-filter: blur(8px);
                                 -webkit-backdrop-filter: blur(8px);
                                 margin-bottom: 28px;">
-                        <h5 style="color:#003366;">Python and SQL for Data Science</h5>
+                        <h5 style="color:#003366;">Python App Development Master Class: App Development Bootcamp</h5>
                         <p style="font-size:28px;">
-                                <li>Issued by Scaler | 08 Mar 2025
-                                <li>Learned data manipulation and analysis using Python and SQL. Covered data cleaning, querying, and exploratory data analysis techniques.
+                            <li>Issued by Udemy | 28 Mar 2025
+                            <li>Completed an in-depth course focused on developing Python-based desktop applications. Gained experience with GUI development using Tkinter.  
                         </p>
                     </div>
                 """, unsafe_allow_html=True)
-                
-                st.image("Python with Data Science.jpg", caption="Python and SQL for Data Science", width=300)
+
+                st.image("D:/Education work/Amantah Education/AEROSPACE/UC-f00aecbd-4347-41c3-85d7-286434923096.jpg", caption="Python App Development Master Class: App Development Bootcamp", width=300)
 
             with col3:
                st.markdown("""
@@ -929,8 +929,8 @@ def welcome_page():
                     </div>
                """, unsafe_allow_html=True)
                
-               st.image("Data Science.jpg", caption="Data Science", width=300)
-
+               st.image("D:/Education work/Amantah Education/AEROSPACE/Data Science.jpg", caption="Data Science", width=300)
+    
             with col4:
                 st.markdown("""
                     <div style="background-color: rgba(240, 242, 246, 0.3);
@@ -943,15 +943,15 @@ def welcome_page():
                                 backdrop-filter: blur(8px);
                                 -webkit-backdrop-filter: blur(8px);
                                 margin-bottom: 28px;">
-                        <h5 style="color:#003366;">Python App Development Master Class: App Development Bootcamp</h5>
+                        <h5 style="color:#003366;">Python and SQL for Data Science</h5>
                         <p style="font-size:28px;">
-                            <li>Issued by Udemy | 28 Mar 2025
-                            <li>Completed an in-depth course focused on developing Python-based desktop applications. Gained experience with GUI development using Tkinter.  
+                                <li>Issued by Scaler | 08 Mar 2025
+                                <li>Learned data manipulation and analysis using Python and SQL. Covered data cleaning, querying, and exploratory data analysis techniques.
                         </p>
                     </div>
                 """, unsafe_allow_html=True)
-
-                st.image("UC-f00aecbd-4347-41c3-85d7-286434923096.jpg", caption="Python App Development Master Class: App Development Bootcamp", width=300)
+                
+                st.image("D:/Education work/Amantah Education/AEROSPACE/Python with Data Science.jpg", caption="Python and SQL for Data Science", width=300)
 
             with col5:
                 st.markdown("""
@@ -965,15 +965,15 @@ def welcome_page():
                                 backdrop-filter: blur(8px);
                                 -webkit-backdrop-filter: blur(8px);
                                 margin-bottom: 28px;">
-                        <h5 style="color:#003366;">HTML, CSS, and JavaScript Certification Course for Beginners</h5>
+                        <h5 style="color:#003366;">Python Course for Beginners</h5>
                         <p style="font-size:28px;">
-                            <li>Issued by Udemy | 25 April 2025
-                            <li>Developed skills in front-end web development, including building responsive web pages using HTML, CSS, and basic JavaScript.  
+                            <li>Issued by Scaler | 25 Feb 2025
+                            <li>Gained foundational knowledge of Python programming, including syntax, data structures, and basic scripting.
                         </p>
                     </div>
                 """, unsafe_allow_html=True)
-
-                st.image("UC-092bc091-f698-447e-bf4f-ded9e81ad5a5.jpg", caption="HTML, CSS, and JavaScript Certification Course for Beginners", width=300)
+                
+                st.image("D:/Education work/Amantah Education/AEROSPACE/Python.jpg", caption="Python Course for Beginners", width=300)
          
         def Projects():
 

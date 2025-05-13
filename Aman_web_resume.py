@@ -736,13 +736,59 @@ def welcome_page():
             # ✅ Apply background image (Make sure the path is correct)
             set_background("Abstract-of-web-developer-portfolio-images.jpg")
 
-            # ✅ Features Section
+             # ✅ Features Section
             st.header("Internship")
-            col1, col2, col3,col4 = st.columns(4)
-            
-            col1, col2, col3, col4 = st.columns(4)  
+            col1, col2, col3,col4,col5 = st.columns(5)
+            col1, col2, col3, col4,col5 = st.columns(5)
 
             with col1:
+                st.markdown("""
+                    <div style="background-color: rgba(240, 242, 246, 0.3);
+                                padding: 30px;
+                                border-radius: 15px;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+                                line-height: 1.8;
+                                color: white;
+                                backdrop-filter: blur(8px);
+                                -webkit-backdrop-filter: blur(8px);
+                                margin-bottom: 28px;">
+                        <h5 style="color:#003366;">Reusable Launch Vehcile "Atal Yaan" – Orbitx India Aerospace</h5>
+                        <p style="font-size:28px;">
+                            <li>Issued by Orbitx India Aerospace-Rajasthan,India | 09 Aug 2022<br>
+                            <li>worked on the Reusable Launch Vehicle (RLV) project named "Atal Yaan".
+                            During this time, I contributed to the vehicle’s preliminary design and analysis,gaining hands-on experience in reusable
+                            space systems and enhancing my understanding of launch vehicle technologies.
+                        </p>
+                    </div>
+                """, unsafe_allow_html=True)
+
+                st.image("Internship 2022.png", caption="Spacecraft Design – Orbitx India Aerospace", width=300) 
+
+            with col2:
+                st.markdown("""
+                    <div style="background-color: rgba(240, 242, 246, 0.3);
+                                padding: 30px;
+                                border-radius: 15px;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+                                line-height: 1.8;
+                                color: white;
+                                backdrop-filter: blur(8px);
+                                -webkit-backdrop-filter: blur(8px);
+                                margin-bottom: 28px;">
+                        <h5 style="color:#003366;">Spacecraft Design – Orbitx India Aerospace</h5>
+                        <p style="font-size:28px;">
+                            <li>Issued by Orbitx India Aerospace-Rajasthan,India | 12 Dec 2021<br>
+                            <li>Worked on a spacecraft design project under the mentorship of Orbitx India Aerospace. Contributed to structural layout, subsystem integration,
+                            and conceptual modeling. Gained insights into real-world aerospace design challenges and team collaboration in a space-focused startup environment.  
+                        </p>
+                    </div>
+                """, unsafe_allow_html=True)
+
+                st.image("Internship 2021_page-0001.jpg", caption="Spacecraft Design – Orbitx India Aerospace", width=300)
+
+            with col3:
                 st.markdown("""
                     <div style="background-color: rgba(240, 242, 246, 0.3);
                                 padding: 30px;
@@ -765,7 +811,7 @@ def welcome_page():
 
                 st.image("Space claim.png", caption="ANSYS (SpaceClaim) Software Training", width=300)
 
-            with col2:
+            with col4:
                 st.markdown("""
                     <div style="background-color: rgba(240, 242, 246, 0.3);
                                 padding: 30px;
@@ -789,7 +835,7 @@ def welcome_page():
 
                 st.image("cfd cae.png", caption="ANSYS (CAE + CFD) Analysis Training", width=300)
 
-            with col3:
+            with col5:
                st.markdown("""
                     <div style="background-color: rgba(240, 242, 246, 0.3);
                                 padding: 30px;
@@ -811,29 +857,6 @@ def welcome_page():
                 """, unsafe_allow_html=True)
 
                st.image("GD&T.png", caption="Geometric Dimensioning & Tolerancing (GD&T)", width=300)
-
-            with col4:
-                st.markdown("""
-                    <div style="background-color: rgba(240, 242, 246, 0.3);
-                                padding: 30px;
-                                border-radius: 15px;
-                                border: 1px solid rgba(255, 255, 255, 0.3);
-                                box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
-                                line-height: 1.8;
-                                color: white;
-                                backdrop-filter: blur(8px);
-                                -webkit-backdrop-filter: blur(8px);
-                                margin-bottom: 28px;">
-                        <h5 style="color:#003366;">Spacecraft Design – Orbitx India Aerospace</h5>
-                        <p style="font-size:28px;">
-                            <li>Issued by Orbitx India Aerospace-Rajasthan,India | 12 Dec 2021<br>
-                            <li>Worked on a spacecraft design project under the mentorship of Orbitx India Aerospace. Contributed to structural layout, subsystem integration,
-                            and conceptual modeling. Gained insights into real-world aerospace design challenges and team collaboration in a space-focused startup environment.  
-                        </p>
-                    </div>
-                """, unsafe_allow_html=True)
-
-                st.image("Internship 2021_page-0001.jpg", caption="Spacecraft Design – Orbitx India Aerospace", width=300)
 
             st.markdown("---")
 

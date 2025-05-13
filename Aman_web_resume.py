@@ -657,7 +657,8 @@ def welcome_page():
                                 </p>
                             </div>
                         """, unsafe_allow_html=True)
-            st.title("Skills Set")
+           
+          st.title("Skills Set")
             st.title("Simulation & Design")
 
             # List of image paths and captions
@@ -679,8 +680,8 @@ def welcome_page():
             st.title("Programming & AI")
             # List of image paths and captions
             images = [
-                ("Python"),
-                ("Data Science"),  
+                ("Python.jpg"),
+                ("Data Science Logo.jpg"),  
             ]
 
             # Create 5 columns for horizontal layout
@@ -696,8 +697,8 @@ def welcome_page():
 
             # List of image paths and captions
             images = [
-                ("Office"),
-                ("Canva"),  
+                ("Office.png"),
+                ("Canva.png"),  
             ]
 
             # Create 5 columns for horizontal layout

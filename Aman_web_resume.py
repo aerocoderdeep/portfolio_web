@@ -1246,49 +1246,56 @@ def welcome_page():
                     st.image(item["image"], caption=item["caption"], width=300)
 
 
-            # 📝 Research paper data
+                # 📝 Research paper data
             research_items = [
                 {
                     "title": "Journal of Emerging Technologies and Innovative Research",
                     "date": "March 2024",
                     "desc": "Python Programming in the Aerospace Industry. "
-                            "Explored automation, simulation, and design tools using Python in aerospace workflows."
+                            "Explored automation, simulation, and design tools using Python in aerospace workflows.",
+                    "link": "https://www.ijaresm.com/python-programming-in-the-aerospace-industry"
                 },
                 {
                     "title": "International Journal of All Research Education & Scientific Methods",
                     "date": "Feb 2024",
                     "desc": "Review Paper on CFD Analysis of Different NACA Airfoil Series. "
-                            "Compared pressure and lift behavior of various NACA airfoils using CFD tools."
+                            "Compared pressure and lift behavior of various NACA airfoils using CFD tools.",
+                    "link": "https://www.jetir.org/papers/JETIR2403948.pdf"
                 },
                 {
                     "title": "International Journal of Creative Research Thoughts",
                     "date": "Sept 2023",
                     "desc": "Case Studies in Missile Design Failures by CFD Simulation. "
-                            "Analyzed real-world failures and design improvements using CFD analysis."
+                            "Analyzed real-world failures and design improvements using CFD analysis.",
+                    "link": "http://www.ijcrt.org/papers/IJCRT2308632.pdf"
                 },
                 {
                     "title": "International Journal of Research and Analytical Reviews",
                     "date": "Nov 2022",
                     "desc": "Wind Tunnel Design. "
-                            "Outlined layout and principles behind a subsonic wind tunnel setup."
+                            "Outlined layout and principles behind a subsonic wind tunnel setup.",
+                    "link": "http://www.ijrar.org/papers/IJRAR22D2210.pdf"
                 },
                 {
                     "title": "International Research Journal of Engineering and Technology",
                     "date": "Dec 2020",
                     "desc": "Effect of Pressure Coefficient on Missile Design. "
-                            "Studied the aerodynamic impact of pressure coefficient variation on missile stability."
+                            "Studied the aerodynamic impact of pressure coefficient variation on missile stability.",
+                    "link": "https://www.irjet.net/archives/V7/i12/IRJET-V7I12410.pdf"
                 },
                 {
                     "title": "International Journal of Scientific Development and Research",
                     "date": "Oct 2020",
                     "desc": "Flow Variation Over Bi-Conic Nose Profile at Different Angle of Attack. "
-                            "Examined shock behavior and drag on biconic shapes under varied angles."
+                            "Examined drag on biconic shapes under varied angles.",
+                    "link": "https://www.ijsdr.org/papers/IJSDR2009033.pdf"
                 },
                 {
                     "title": "International Journal of Scientific Development and Research",
                     "date": "Sept 2020 / Mar 2021",
                     "desc": "Aerodynamic Analysis on Missile Design. "
-                            "Focused on fin configurations and nose designs through CFD modeling."
+                            "Focused on fin configurations and nose designs through CFD modeling.",
+                    "link": "https://www.ijsdr.org/papers/IJSDR2010034.pdf"
                 }
             ]
 
@@ -1296,12 +1303,12 @@ def welcome_page():
             st.subheader("📖 Research Papers")
             for item in research_items:
                 html = f"""
-                <b>🔹 {item['title']}</b><br>
+                <b>🔹 <a href="{item['link']}" target="_blank" style="text-decoration: none; color: #1f77b4;">{item['title']}</a></b><br>
                 📅 <i>{item['date']}</i><br>
                 📝 {item['desc']}
                 """
                 st.markdown(glass_box(html), unsafe_allow_html=True)
-
+                
         def Educational_Activity():
             # ✅ Function to set background image
             def set_background(image_path):

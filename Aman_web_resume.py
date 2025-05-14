@@ -1218,7 +1218,7 @@ def welcome_page():
                     "date": "May 2024",
                     "desc": "Python-Based Evaluation of Aircraft Performance Parameters for Battery-Powered UAV Design."
                             "Presented a Python tool for estimating endurance, range, and thrust needs in UAVs.",
-                    "image": "D:/Education work/Amantah Education/AEROSPACE/Conference2.png",  # Add image path in data
+                    "image": "Conference2.png",  # Add image path in data
                     "caption": "Global Conference on Aeronautical, Aerospace and Mechanical Sciences"
                 },
                 {
@@ -1226,7 +1226,7 @@ def welcome_page():
                     "date": "May 2024",
                     "desc": "A Comparative Study on Effect of Area Ratio and Nozzle Pressure Ratio (NPR) for CD Nozzle – Review. "
                             "Focused on propulsion analysis in supersonic nozzle configurations.",
-                    "image": "D:/Education work/Amantah Education/AEROSPACE/Conference1.png",
+                    "image": "Conference1.png",
                     "caption": "International Conference on Emerging Approaches in Mechanical & Automobile Engineering"
                 }
             ]

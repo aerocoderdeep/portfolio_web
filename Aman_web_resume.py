@@ -1173,7 +1173,9 @@ def welcome_page():
 
             # ✅ Apply background image (Make sure the path is correct)
             set_background("educational-light-bulb-qz50uzn6nrhc6pmv.jpg")
+            
             st.header("📚 Conferences & Research Publications")
+          
             # Font size dropdown
             font_size = st.selectbox(
                 "Select Text Size",
@@ -1199,7 +1201,7 @@ def welcome_page():
                     border: 1px solid rgba(255, 255, 255, 0.3);
                     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
                     line-height: 1.7;
-                    color: white;
+                    color: black;
                     font-size: {selected_font_size};
                     backdrop-filter: blur(10px);
                     -webkit-backdrop-filter: blur(10px);
@@ -1209,21 +1211,43 @@ def welcome_page():
                 </div>
                 """
 
-            # 📌 Data for each item
-            items = [
-
+            # 📌 Conference data
+            conference_items = [
                 {
                     "title": "Global Conference on Aeronautical, Aerospace and Mechanical Sciences",
                     "date": "May 2024",
-                    "desc": "Python-Based Evaluation of Aircraft Performance Parameters for Battery-Powered UAV Design. "
-                            "Presented a Python tool for estimating endurance, range, and thrust needs in UAVs."
+                    "desc": "Python-Based Evaluation of Aircraft Performance Parameters for Battery-Powered UAV Design."
+                            "Presented a Python tool for estimating endurance, range, and thrust needs in UAVs.",
+                    "image": "D:/Education work/Amantah Education/AEROSPACE/Conference2.png",  # Add image path in data
+                    "caption": "Global Conference on Aeronautical, Aerospace and Mechanical Sciences"
                 },
                 {
                     "title": "International Conference on Emerging Approaches in Mechanical & Automobile Engineering",
                     "date": "May 2024",
                     "desc": "A Comparative Study on Effect of Area Ratio and Nozzle Pressure Ratio (NPR) for CD Nozzle – Review. "
-                            "Focused on propulsion analysis in supersonic nozzle configurations."
-                },
+                            "Focused on propulsion analysis in supersonic nozzle configurations.",
+                    "image": "D:/Education work/Amantah Education/AEROSPACE/Conference1.png",
+                    "caption": "International Conference on Emerging Approaches in Mechanical & Automobile Engineering"
+                }
+            ]
+
+            # 🎤 Conferences Section
+            st.subheader("🎤 Conferences")
+            for item in conference_items:
+                html = f"""
+                <b>🔹 {item['title']}</b><br>
+                📅 <i>{item['date']}</i><br>
+                📝 {item['desc']}
+                """
+                st.markdown(glass_box(html), unsafe_allow_html=True)
+
+                # Only show image if available
+                if item["image"]:
+                    st.image(item["image"], caption=item["caption"], width=300)
+
+
+            # 📝 Research paper data
+            research_items = [
                 {
                     "title": "Journal of Emerging Technologies and Innovative Research",
                     "date": "March 2024",
@@ -1268,8 +1292,9 @@ def welcome_page():
                 }
             ]
 
-            # 🖼️ Render each box
-            for item in items:
+            # 📖 Research Papers Section
+            st.subheader("📖 Research Papers")
+            for item in research_items:
                 html = f"""
                 <b>🔹 {item['title']}</b><br>
                 📅 <i>{item['date']}</i><br>

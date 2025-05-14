@@ -1052,7 +1052,9 @@ def welcome_page():
                 📝 {proj['Application Number']}
                 """
                 st.markdown(glass_box(html_proj), unsafe_allow_html=True)
-                
+              
+            st.image("D:/Education work/Amantah Education/AEROSPACE/Patent.png", caption="A NOVEL DESIGN FOR SLANT BACK TAIL GENERATION AIRCRAFT", width=300) 
+          
             st.markdown("## 🏅 Appreciation Certificates")
             # Appreciation Projects
             appreciation_projects = [
@@ -1071,7 +1073,9 @@ def welcome_page():
                 📝 {proj['desc']}
                 """
                 st.markdown(glass_box(html_proj), unsafe_allow_html=True)
-
+            
+            st.image("D:/Education work/Amantah Education/AEROSPACE/RLV Rocket Design Project.png", caption="RLV Rocket Design Project", width=300)
+          
             st.markdown("## 🏎️ Mechanical Projects")
 
             # Mechanical Engineering Projects
@@ -1091,7 +1095,7 @@ def welcome_page():
                 📝 {proj['desc']}
                 """
                 st.markdown(glass_box(html_proj), unsafe_allow_html=True)
-
+            st.image("D:/Education work/Amantah Education/AEROSPACE/Go Kart.png", caption="Go Kart", width=300)
             st.markdown("## 💻 Programming Projects")
 
             # Programming Projects

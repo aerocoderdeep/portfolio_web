@@ -167,9 +167,35 @@ def welcome_page():
                     day_today = now.strftime("%A")
                     st.write(f"📅 **Date:** {date_today}",f"⏰ **Time:** {time_now}",f"🗓️ **Day:** {day_today}")
                     st.subheader("Exploring Aerospace, One Journey at a Time")
-                    
+          
+                    st.header("About My Journey of Education")
+                    st.markdown("""
+                    <div style="
+                        background-color: rgba(240, 242, 246, 0.3);
+                        padding: 30px;
+                        border-radius: 15px;
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+                        font-size: 24px;
+                        line-height: 1.8;
+                        color: white;
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        margin-bottom: 28px;
+                    ">
+                        My name is Amandeep Singh, and my journey is not one paved with privileges or shortcuts, but one shaped by determination, resilience, and a deep desire to rewrite the narrative of my family.<br><br>
+                        I come from a background where education was never a priority—not because it lacked value, but because it simply wasn’t accessible. My father was a hardworking transport businessman who spent long hours on the road to provide for our family. My mother, a dedicated housewife, managed everything at home with strength and silent sacrifice. Neither of them had the opportunity to pursue formal education, and in our household, academics were not something we talked much about. There were no degrees on the walls, no bedtime stories of college life—only the daily grind and the hope that their children might do better.<br><br>
+                        Growing up in such an environment taught me one thing early on: if I wanted to create a different future, I had to fight for it. Education wasn’t just a personal goal—it became my mission. I had no mentors, no roadmap, and no family tradition of academics to follow. But I had something just as powerful: the will to learn and the hunger to grow.<br><br>
+                        Despite the odds, I pursued my passion for aerospace engineering—a field that fascinated me with its complexity, precision, and connection to the vast skies I used to dream under as a child. I earned my B.Tech in Aerospace Engineering and went on to pursue an M.Tech, specializing in guided missiles. It wasn’t easy—there were moments of self-doubt, financial struggles, and academic pressure—but each challenge only strengthened my resolve.<br><br>
+                        Through this journey, I’ve worked on multiple self-driven and collaborative projects—from UAV design tools and rocket motor analysis to wind tunnel development and app-based calculators for aerospace parameters. I also invested time in learning Python, data science, and software tools like ANSYS, knowing that being technically versatile is crucial in today’s world.<br><br>
+                        But beyond the technical skills and degrees, what truly defines me is the story behind it all: a boy from a family with no academic legacy, who chose to chase the sky—literally and metaphorically. I want my story to serve as a reminder that where you come from doesn’t have to decide where you’re going. I am the first in my family to walk this path, but I know I won’t be the last.<br><br>
+                        My vision now is bigger than just personal success. With Amantah Education and the Aerospace School, I aim to inspire and educate the next generation—especially those who, like me, come from places where dreams often seem out of reach.<br><br>
+                        Because if my story proves anything, it’s this: when you have purpose, passion, and persistence, the sky is not the limit—it’s just the beginning.
+                    </div>
+                    """, unsafe_allow_html=True)
+          
                     # ✅ About Section
-                    st.header("About Me")
+                    st.header("About My Focus")
                     st.markdown("""
                     <div style="
                         background-color: rgba(240, 242, 246, 0.3);

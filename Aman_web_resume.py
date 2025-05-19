@@ -178,7 +178,7 @@ def welcome_page():
                         box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
                         font-size: 24px;
                         line-height: 1.8;
-                        color: white;
+                        color: black;
                         backdrop-filter: blur(8px);
                         -webkit-backdrop-filter: blur(8px);
                         margin-bottom: 28px;

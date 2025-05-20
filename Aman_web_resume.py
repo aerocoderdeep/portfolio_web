@@ -194,6 +194,8 @@ def welcome_page():
                     </div>
                     """, unsafe_allow_html=True)
           
+                    st.image("image.jpg", caption="About My Journey of Education", width=500)
+          
                     # ✅ About Section
                     st.header("About My Focus")
                     st.markdown("""

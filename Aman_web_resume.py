@@ -1337,6 +1337,8 @@ def welcome_page():
                 """
                 st.markdown(glass_box(html), unsafe_allow_html=True)
                 
+            st.image("My Programming Project.png", caption="RLV Rocket Design Project", width=800)
+            
         def Educational_Activity():
             # ✅ Function to set background image
             def set_background(image_path):

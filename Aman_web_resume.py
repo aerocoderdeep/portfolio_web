@@ -1179,7 +1179,7 @@ def welcome_page():
                 """
                 st.markdown(glass_box(html_proj), unsafe_allow_html=True)
               
-            st.image("My Programming Project.png", caption="RLV Rocket Design Project", width=800)
+            st.image("My Programming Project.png", caption="My Programming Project", width=800)
           
         def Conferance_Research_Publication():
             # ✅ Function to set background image

@@ -1363,6 +1363,31 @@ def welcome_page():
             set_background("education-open-book-blackboard-24neqyjtkzc2rc21.jpg")
 
             st.markdown("## 📚 Educational Activities")
+            
+            # Activity 1: Akiic 
+            st.markdown("""
+            <div style="background-color: rgba(240, 242, 246, 0.3);
+                        padding: 30px;
+                        border-radius: 15px;
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                        box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+                        line-height: 1.8;
+                        color: black;
+                        backdrop-filter: blur(8px);
+                        -webkit-backdrop-filter: blur(8px);
+                        margin-bottom: 28px;">
+                <h5 style="color:#003366;">Dr. A.P.J. Abdul Kalam Ideation and Innovation Challenge 2025</h5>
+                <p style="font-size:28px;">
+                        Topic: Guided Missile Design<br>
+                        Role: Participant<br>
+                        📅 21st Feb 2025<br>
+                        Organizer: DIAT-IIC in collaboration with DIAT-SCEC<br> 
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # Adjust image size (width: 600px, height: 400px)
+            st.image("Screenshot (51).png", caption="Dr. A.P.J. Abdul Kalam Ideation and Innovation Challenge 2025", width=600)
 
             # Activity 1: Workshop
             st.markdown("""

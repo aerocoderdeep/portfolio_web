@@ -1372,7 +1372,7 @@ def welcome_page():
                         border: 1px solid rgba(255, 255, 255, 0.3);
                         box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
                         line-height: 1.8;
-                        color: black;
+                        color: white;
                         backdrop-filter: blur(8px);
                         -webkit-backdrop-filter: blur(8px);
                         margin-bottom: 28px;">

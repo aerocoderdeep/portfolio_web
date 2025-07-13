@@ -1062,7 +1062,7 @@ def welcome_page():
                 </div>
                 """
             
-            st.markdown("## 🏅 Patent Pulished")
+            st.markdown("## 🏅 Patent Published")
             # Appreciation Projects
             appreciation_projects = [
                 {

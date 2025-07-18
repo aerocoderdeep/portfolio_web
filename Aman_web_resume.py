@@ -661,8 +661,7 @@ def welcome_page():
                                      <li> HTML, CSS, JS – Beginner
                                      <li> Data Science
                                      <li> SQL
-                                     <li> AI Tools & ChatGPT
-                                     
+                                     <li> AI Tools & ChatGPT 
                                 </p>
                             </div>
                         """, unsafe_allow_html=True)

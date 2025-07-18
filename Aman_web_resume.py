@@ -656,12 +656,13 @@ def welcome_page():
                                         margin-bottom: 28px;">
                                 <h5 style="color:#003366;">Programming & AI</h5>
                                 <p style="font-size:35px;">
-                                     <li> SQL
+                                     <li> Python
                                      <li> Web Dev 
-                                     <li> App Development
                                      <li> HTML, CSS, JS – Beginner
                                      <li> Data Science
+                                     <li> SQL
                                      <li> AI Tools & ChatGPT
+                                     
                                 </p>
                             </div>
                         """, unsafe_allow_html=True)

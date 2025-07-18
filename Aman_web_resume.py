@@ -637,7 +637,8 @@ def welcome_page():
                                 <h5 style="color:#003366;">Simulation & Design</h5>
                                 <p style="font-size:35px;">
                                      <li> ANSYS (FEA & CFD)
-                                     <li> PTC Creo   
+                                     <li> PTC Creo 
+                                     <li> Solidworks
                                 </p>
                             </div>
                         """, unsafe_allow_html=True)

@@ -1523,7 +1523,7 @@ def welcome_page():
             st.write("📍 Location: New Delhi")
             st.write("📧 Email: amandeepoct97@gmail.com")
             st.write("📞 Contact: +91-9211910555")
-            st.write("🌐 Website: [https://amandeepsinghportfolio.streamlit.app/](#)")
+            st.write("🌐 Website: https://amandeepsinghportfolio.streamlit.app/")
             
             # ✅ Social Media Links
             st.header("Connect with Me")

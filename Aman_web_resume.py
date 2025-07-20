@@ -1173,15 +1173,15 @@ def welcome_page():
 
             # Display Programming Projects in Glass Boxes
             for proj in programming_projects:
-            html_proj = f"""
-            <b>🔸 {proj['title']}</b><br>
-            📅 <i>{proj['date']}</i><br>
-            📝 {proj['desc']}<br>
-            """
-            if "link" in proj:
-                html_proj += f'🔗 <a href="{proj["link"]}" target="_blank">View Project</a><br>'
-    
-            st.markdown(glass_box(html_proj), unsafe_allow_html=True)
+                html_proj = f"""
+                <b>🔸 {proj['title']}</b><br>
+                📅 <i>{proj['date']}</i><br>
+                📝 {proj['desc']}<br>
+                """
+                if "link" in proj:
+                    html_proj += f'🔗 <a href="{proj["link"]}" target="_blank">View Project</a><br>'
+        
+                st.markdown(glass_box(html_proj), unsafe_allow_html=True)
             st.image("My Programming Project.png", caption="My Programming Project", width=800)
           
         def Conferance_Research_Publication():

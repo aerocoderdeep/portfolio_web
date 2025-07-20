@@ -1005,7 +1005,6 @@ def welcome_page():
                 st.image("Python.jpg", caption="Python Course for Beginners", width=300)
          
         def Projects():
-
             # ✅ Function to set background image
             def set_background(image_path):
                 try:
@@ -1524,6 +1523,7 @@ def welcome_page():
             st.write("📧 Email: amandeepoct97@gmail.com")
             st.write("📞 Contact: +91-9211910555")
             st.write("🌐 Website: https://amandeepsinghportfolio.streamlit.app/")
+            st.write("🌐 Github: https://github.com/aerocoderdeep")
             
             # ✅ Social Media Links
             st.header("Connect with Me")

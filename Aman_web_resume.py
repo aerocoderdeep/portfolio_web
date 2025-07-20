@@ -1131,7 +1131,7 @@ def welcome_page():
                 {
                     "title": "Aerospace Web Page (Self)",
                     "date": "April 2025",
-                    "desc": "Created an educational web platform for aerospace enthusiasts and learners."
+                    "desc": "Created an educational web platform for aerospace enthusiasts and learners.",
                     "link": "https://demoaerospacewebpage-dcwmrxpaq8vap2b5pxqbvj.streamlit.app/"
                 },
                 {

@@ -89,6 +89,4 @@ LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/amandeep-singh-ae/
 
 Email: amandeepoct97@gmailcom
 
----
-
 Developed to showcase projects, technical skills, and professional achievements.
